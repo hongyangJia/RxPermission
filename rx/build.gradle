@@ -24,5 +24,4 @@ android {
 dependencies {
     provided rootProject.ext.rxJava
     provided rootProject.ext.permission
-
 }

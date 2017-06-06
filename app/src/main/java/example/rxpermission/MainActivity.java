@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         RxKtPermission rxKtPermission = new RxKtPermission(this);
         rxKtPermission.requestCamera().subscribe(new Consumer<Boolean>() {
             @Override
