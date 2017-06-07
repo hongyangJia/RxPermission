@@ -4,7 +4,7 @@
 
  Support internationalization(English Chinese) 
 
-**Support Kotlin **
+**Support Kotlin**
 For more information please see the https://github.com/hongyangJia/RxKotlinPermission.
 
 **Getting started**
