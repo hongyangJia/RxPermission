@@ -16,8 +16,8 @@ For more information please see the https://github.com/hongyangJia/RxKotlinPermi
       compile 'com.github.hongyangJia:RxPermission:1.0.0'
       
        ext {
-             rxJava = 'io.reactivex.rxjava2:rxkotlin:2.0.3'
-             appcompat = 'com.android.support:appcompat-v7:25.3.1'
+             rxJava = 'io.reactivex.rxjava2:rxkotlin:x.x.x'
+             appcompat = 'com.android.support:appcompat-v7:x.x.x'
              permission = 'com.github.hongyangJia:RxKotlinPermission:1.1.4'
       }
       
