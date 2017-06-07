@@ -51,9 +51,9 @@ For more information please see the https://github.com/hongyangJia/RxKotlinPermi
      
                  @Override
                  public void onError(Throwable e) {
-                         /**
-                           *Error
-                           */
+                     /**
+                       *Error
+                       */
                  }
      
                  @Override
