@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 
 import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import rx.permission.RxKtPermission;
 
@@ -17,9 +19,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RxKtPermission rxKtPermission = new RxKtPermission(this);
-        rxKtPermission.requestCamera().subscribe(new Consumer<Boolean>() {
+        rxKtPermission.requestCamera().subscribe(new Observer<Boolean>() {
             @Override
-            public void accept(@io.reactivex.annotations.NonNull Boolean aBoolean) throws Exception {
+            public void onSubscribe(Disposable d) {
+
+            }
+
+            @Override
+            public void onNext(Boolean aBoolean) {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
 
             }
         });
