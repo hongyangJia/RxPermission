@@ -18,7 +18,7 @@ For more information please see the https://github.com/hongyangJia/RxKotlinPermi
        ext {
              rxJava = 'io.reactivex.rxjava2:rxkotlin:x.x.x'
              appcompat = 'com.android.support:appcompat-v7:x.x.x'
-             permission = 'com.github.hongyangJia:RxKotlinPermission:1.1.6'
+             permission = 'com.github.hongyangJia:RxKotlinPermission:1.1.8'
       }
       
 **write the request  permission program(impl Consumer )**
