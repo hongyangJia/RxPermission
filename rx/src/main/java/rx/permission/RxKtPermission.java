@@ -3,8 +3,6 @@ package rx.permission;
 import android.Manifest;
 import android.app.Activity;
 
-import org.jetbrains.annotations.NotNull;
-
 import io.reactivex.Observable;
 import rxkotlin.grace.permission.Permission;
 
@@ -20,7 +18,7 @@ public class RxKtPermission implements Permission<Observable<Boolean>> {
         this.mActivity = mActivity;
     }
 
-    public Observable<Boolean> request(@NotNull String... permission) {
+    public Observable<Boolean> request(String... permission) {
         return  RxConverter.adapter(true, mActivity, permission);
     }
 
@@ -76,4 +74,8 @@ public class RxKtPermission implements Permission<Observable<Boolean>> {
         return RxConverter.adapter(true, mActivity, Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE);
     }
 
+    @Override
+    public Observable<Boolean> requestBluetoothLocation() {
+        return RxConverter.adapter(true,mActivity,Manifest.permission.BLUETOOTH, Manifest.permission.BLUETOOTH_ADMIN, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION);
+    }
 }
